@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Free Water</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {
+            "packages":["map"],
+            "mapsApiKey": "AIzaSyBauKV4twM3zUnjosmnC_mK8AAIWdtXfbc"
+        });
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Lat', 'Long', 'Name'],
+            //  [37.4232, -122.0853, 'Work'],
+            [50.797766749999994, -1.0964683750000002, 'Anglesia Building: on the ground floor'],
+            [50.795791, -1.0984847, 'Cafe Coco: access from street level'],
+            [50.7947936, -1.0934927, 'Eldon Building: on the ground floor'],
+            [50.7976855, -1.098681, 'The Hub: on the ground floor of Dennis Sciama'],
+            [50.7975142, -1.0945438, 'The Park Building Cafe'],
+            [50.794335, -1.096735, 'Pitstop: in the Student Union on the ground floor'],
+            [50.798553, -1.099303, 'Portland Cafe: on the ground floor'],
+            [50.795828, -1.094698, 'St Andrews Court Cafe: on the ground floor'],
+
+
+            //  https://www.google.com/maps/d/u/0/viewer?mid=1x_QSUyJEbOcMIKdTpdEv3Zg__bYhnSSP&ll=50.79582410000002%2C-1.0946951999999328&z=16
+
+            //  https://developers.google.com/chart/interactive/docs/gallery/map#named-locations
+
+
+
+            ]);
+
+
+            var map = new google.visualization.Map(document.getElementById('map_div'));
+            map.draw(data, {
+              showTooltip: true,
+              showInfoWindow: true
+            });
+          }
+
+            google.charts.load("current", {"packages": ["map"]});
+
+
+
+
+        </script>
+        </head>
+
+
+
+        <center>
+          <br>
+            <h1>How many free water points are available to University of Portsmouth students?</h1>
+              <p>If you are a student of University of Portsmouth, here is where you can top up your water bottle for free!</p>
+                <div id="map_div"></div>
+          <br>
+        </center>
+
+
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBauKV4twM3zUnjosmnC_mK8AAIWdtXfbc&callback=initMap" type="text/javascript"></script>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
