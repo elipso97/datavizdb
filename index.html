@@ -47,7 +47,7 @@
                             [50.794470, -1.091612, "Middle Street: 1st floor kitchen and 2nd floor kitchen."],
                             [50.795326, -1.096397, "Nuffield Building: 1 in Chaplaincy (ground floor) and 1 in 2.22 (2nd floor)."],
                             [50.798035, -1.099597, "Richmond Building: By the café."],
-                            [50.794978, -1.096751, "Spinneker Sports Centre: In 0.02, 1.05 and 2.04."],
+                            [50.794978, -1.096751, "Spinnaker Sports Centre: In 0.02, 1.05 and 2.04."],
                             [50.796350, -1.094984, "St Michael's Building: New wing: 2.01, 1.05 and 1.18 & Old wing: 5.38, 3.34, and 1.28."],
                             [50.794822, -1.094403, "St Paul's Sports Centre: 1st floor fountains - through the first doors on the left by the stairs, next to the changing facilities."],
                             [50.795197, -1.093594, "Rosalind Franklin West: In 0.331."],
@@ -66,22 +66,34 @@
                         }
 
                         google.charts.load("current", { packages: ["map"] });
+            
+            
+            
+              var myLatlng = new google.maps.LatLng(50.794868, -1.091283);
+              var mapOptions = {
+                zoom: 4,
+                center: myLatlng
+              }
+              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+              var marker = new google.maps.Marker({
+                  position: myLatlng,
+                  title:"Eldon Building"
+              });
+
+              // To add the marker to the map, call setMap();
+              marker.setMap(map);
+            
           </script>
 
           
         <!--text-->
           <center>
-            <br />
-            <h1>
-              How many free water points are available to University of
-              Portsmouth students?
-            </h1>
-            <p>
-              If you are a student of University of Portsmouth, here is where
-              you can top up your water bottle for free!
-            </p>
-            <div id="map_div"></div>
-            <br />
+            <br/>
+              <h1>How many free water points are available to University of Portsmouth students?</h1>
+                <p>If you are a student of University of Portsmouth, here is where you can top up your water bottle for free!</p>
+                  <div id="map_div"></div>
+            <br/>
           </center>
 
           <!--maps API Key-->
