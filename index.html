@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!--Metadata-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="this page shows a Googel Map with makrer points to show where students can get free water topped up."/>
+    <meta name="author" content="Izabela Phung Tuan" />
 
-<head>
+    <title>Water for Students</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <!--External Javascript
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/maps_styling.js"></script>-->
+  </head>
 
-  <title>Free Water</title>
+  <body>
+    <!-- page content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+                        google.charts.load("current", {
+                          packages: ["map"],
+                          mapsApiKey: "AIzaSyDwZmi3K8F7Kd-OnM12tSQ3BolG2qI2uGQ"    //API Key
+                        });
+                        google.charts.setOnLoadCallback(drawChart);
+                        function drawChart() {
+                          var data = google.visualization.arrayToDataTable([
+                          //map latitude and longtitude locations, name and description
+                            ["Lat", "Long", "Name"],
+                            [50.797766749999994,-1.0964683750000002,"Anglesia Building: On the ground floor and on the first floor, law courts and in the north stairwell on the first floor."],
+                            [50.795791, -1.0984847, "Cafe Coco: Access from street level."],
+                            [50.794868, -1.091283, "Eldon Building: In North Wing in rooms 2.08 and 1.12. In East Wing in 0.98 and Graphics Basement rear lobby. In South Wing in 2nd floor Blank Canvass area, 1st floor by 1.125, and Eldon Production Centre on the ground floor. In West Wing in the 3rd floor student kitchen and by the Cafe on the ground floor."],
+                            [50.7976855,-1.098681,"The Hub: On the ground floor of Dennis Sciama."],
+                            [50.7975142, -1.0945438, "Park Building: By the café."],
+                            [50.794335,-1.096735,"Pitstop: In the Student Union on the ground floor."],
+                            [50.798488, -1.099442, "Portland Building: On the ground floor and room 1.50."],
+                            [50.795828,-1.094698,"St Andrews Court Cafe: Unit 1 - ground floor kitchen, first floor kitchen (1.32). Unit 4 - 2nd floor kitchen (2.35), 1st floor kitchen (1.26), Ground floor 0.20. Graduate School - 4th floor by reception."],
+                            [50.792442, -1.100084,"St George's Building: 1 in 1st floor vending area, 1 in 2nd floor kitchen, 1 in 3rd floor kitchen, 2 in 4th floor kitchen, 2 in 5th floor kitchen."],
+                            [50.793666, -1.097775, "University Library: On the ground floor on the right hand side of the building."],
+                            [50.794470, -1.091612, "Middle Street: 1st floor kitchen and 2nd floor kitchen."],
+                            [50.795326, -1.096397, "Nuffield Building: 1 in Chaplaincy (ground floor) and 1 in 2.22 (2nd floor)."],
+                            [50.798035, -1.099597, "Richmond Building: By the café."],
+                            [50.794978, -1.096751, "Spinneker Sports Centre: In 0.02, 1.05 and 2.04."],
+                            [50.796350, -1.094984, "St Michael's Building: New wing: 2.01, 1.05 and 1.18 & Old wing: 5.38, 3.34, and 1.28."],
+                            [50.794822, -1.094403, "St Paul's Sports Centre: 1st floor fountains - through the first doors on the left by the stairs, next to the changing facilities."],
+                            [50.795197, -1.093594, "Rosalind Franklin West: In 0.331."],
+                            [50.795749, -1.092390, "University Learning Centre: 1 on ground floor and 1 on 5th floor."],
+                            [50.793490, -1.096157, "William Beatty: Ground floor waiting area."],
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="js/scripts.js"></script>
+                          ]);
 
-</head>
+                          var map = new google.visualization.Map(
+                            document.getElementById("map_div")
+                          );
+                          map.draw(data, {
+                            showTooltip: true,
+                            showInfoWindow: true
+                          });
+                        }
 
-<body>
+                        google.charts.load("current", { packages: ["map"] });
+          </script>
 
+          
+        <!--text-->
+          <center>
+            <br />
+            <h1>
+              How many free water points are available to University of
+              Portsmouth students?
+            </h1>
+            <p>
+              If you are a student of University of Portsmouth, here is where
+              you can top up your water bottle for free!
+            </p>
+            <div id="map_div"></div>
+            <br />
+          </center>
 
-
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-          google.charts.load("current", {
-            "packages":["map"],
-            "mapsApiKey": "AIzaSyBauKV4twM3zUnjosmnC_mK8AAIWdtXfbc"
-        });
-          google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ['Lat', 'Long', 'Name'],
-            //  [37.4232, -122.0853, 'Work'],
-            [50.797766749999994, -1.0964683750000002, 'Anglesia Building: on the ground floor'],
-            [50.795791, -1.0984847, 'Cafe Coco: access from street level'],
-            [50.7947936, -1.0934927, 'Eldon Building: on the ground floor'],
-            [50.7976855, -1.098681, 'The Hub: on the ground floor of Dennis Sciama'],
-            [50.7975142, -1.0945438, 'The Park Building Cafe'],
-            [50.794335, -1.096735, 'Pitstop: in the Student Union on the ground floor'],
-            [50.798553, -1.099303, 'Portland Cafe: on the ground floor'],
-            [50.795828, -1.094698, 'St Andrews Court Cafe: on the ground floor'],
-
-
-            //  https://www.google.com/maps/d/u/0/viewer?mid=1x_QSUyJEbOcMIKdTpdEv3Zg__bYhnSSP&ll=50.79582410000002%2C-1.0946951999999328&z=16
-
-            //  https://developers.google.com/chart/interactive/docs/gallery/map#named-locations
-
-
-
-            ]);
-
-
-            var map = new google.visualization.Map(document.getElementById('map_div'));
-            map.draw(data, {
-              showTooltip: true,
-              showInfoWindow: true
-            });
-          }
-
-            google.charts.load("current", {"packages": ["map"]});
-
-
-
-
-        </script>
-        </head>
-
-
-
-        <center>
-          <br>
-            <h1>How many free water points are available to University of Portsmouth students?</h1>
-              <p>If you are a student of University of Portsmouth, here is where you can top up your water bottle for free!</p>
-                <div id="map_div"></div>
-          <br>
-        </center>
-
-
-
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBauKV4twM3zUnjosmnC_mK8AAIWdtXfbc&callback=initMap" type="text/javascript"></script>
-
+          <!--maps API Key-->
+      <script async defer src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDwZmi3K8F7Kd-OnM12tSQ3BolG2qI2uGQ&center=47.65,-122.35000000000002&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xf5f5f5&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x616161&style=element:labels.text.stroke%7Ccolor:0xf5f5f5&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:road%7Celement:geometry%7Ccolor:0xffffff&style=feature:road.arterial%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:road.highway%7Celement:geometry%7Ccolor:0xdadada&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:water%7Celement:geometry%7Ccolor:0xc9c9c9&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&size=480x360"></script>
+          
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
