@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.0.1
+- https://www.phpmyadmin.net
+-
+- Host: localhost:3306
+- Generation Time: Dec 05, 2019 at 10:53 PM
+- Server version: 5.1.73
+- PHP Version: 7.1.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="DataVizDatabase" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="water_stations_data">
+                CREATE TABLE `water_stations_data` (
+                  `id` decimal(3,1) DEFAULT NULL,
+                  `name` varchar(26) DEFAULT NULL,
+                  `address` varchar(75) DEFAULT NULL,
+                  `lat` decimal(10,8) DEFAULT NULL,
+                  `lng` decimal(10,9) DEFAULT NULL,
+                  `type` int(11) DEFAULT NULL,
+                  `description` varchar(291) DEFAULT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'DataVizDatabase'
+    -->
+    <database name="DataVizDatabase">
+        <!-- Table water_stations_data -->
+        <table name="water_stations_data">
+            <column name="id">1.0</column>
+            <column name="name">Anglesia Building</column>
+            <column name="address">Anglesea Rd, Portsmouth PO1 3DJ</column>
+            <column name="lat">50.79776675</column>
+            <column name="lng">-1.096468375</column>
+            <column name="type">NULL</column>
+            <column name="description">On the ground floor and on the first floor, law courts and in the north stairwell on the first floor.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">2.0</column>
+            <column name="name">Cafe Coco</column>
+            <column name="address">2 Cambridge Rd, Portsmouth PO1 2EF</column>
+            <column name="lat">50.79579100</column>
+            <column name="lng">-1.098484700</column>
+            <column name="type">NULL</column>
+            <column name="description">Access from street level.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">3.0</column>
+            <column name="name">Eldon Building</column>
+            <column name="address">Eldon Building, Portsmouth, Southsea PO1 2DJ</column>
+            <column name="lat">50.79486800</column>
+            <column name="lng">-1.091283000</column>
+            <column name="type">NULL</column>
+            <column name="description">In North Wing in rooms 2.08 and 1.12. In East Wing in 0.98 and Graphics Basement rear lobby. In South Wing in 2nd floor Blank Canvass area, 1st floor by 1.125, and Eldon Production Centre on the ground floor. In West Wing in the 3rd floor student kitchen and by the Cafe on the ground floor.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">4.0</column>
+            <column name="name">The Hub</column>
+            <column name="address">The Hub Café (University of Portsmouth) Burnaby Road, Portsmouth PO1 3FX</column>
+            <column name="lat">50.79768550</column>
+            <column name="lng">-1.098681000</column>
+            <column name="type">NULL</column>
+            <column name="description">On the ground floor of Dennis Sciama.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">5.0</column>
+            <column name="name">Park Building</column>
+            <column name="address">King Henry I St, Portsmouth PO1 2BZ</column>
+            <column name="lat">50.79751420</column>
+            <column name="lng">-1.094543800</column>
+            <column name="type">NULL</column>
+            <column name="description">By the café.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">6.0</column>
+            <column name="name">Pitstop</column>
+            <column name="address">Cambridge Rd, Portsmouth PO1 2EF</column>
+            <column name="lat">50.79433500</column>
+            <column name="lng">-1.096735000</column>
+            <column name="type">NULL</column>
+            <column name="description">In the Student Union on the ground floor.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">7.0</column>
+            <column name="name">Portland Building</column>
+            <column name="address">Portland Building, Portsmouth, PO1 3AH</column>
+            <column name="lat">50.79848800</column>
+            <column name="lng">-1.099442000</column>
+            <column name="type">NULL</column>
+            <column name="description">On the ground floor and room 1.50.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">8.0</column>
+            <column name="name">St Andrews Court Cafe</column>
+            <column name="address">St Andrews Court, St Michael's Rd, Portsmouth PO1 2PR</column>
+            <column name="lat">50.79582800</column>
+            <column name="lng">-1.094698000</column>
+            <column name="type">NULL</column>
+            <column name="description">Unit 1 - ground floor kitchen, first floor kitchen (1.32). Unit 4 - 2nd floor kitchen (2.35), 1st floor kitchen (1.26), Ground floor 0.20. Graduate School - 4th floor by reception.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">9.0</column>
+            <column name="name">St George's Building</column>
+            <column name="address">141 High St, Portsmouth PO1 2HY</column>
+            <column name="lat">50.79244200</column>
+            <column name="lng">-1.100084000</column>
+            <column name="type">NULL</column>
+            <column name="description">1 in 1st floor vending area, 1 in 2nd floor kitchen, 1 in 3rd floor kitchen, 2 in 4th floor kitchen, 2 in 5th floor kitchen. </column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">10.0</column>
+            <column name="name">University Library</column>
+            <column name="address">Cambridge Rd, Portsmouth, PO1 2ST</column>
+            <column name="lat">50.79366600</column>
+            <column name="lng">-1.097775000</column>
+            <column name="type">NULL</column>
+            <column name="description">On the ground floor on the right hand side of the building.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">11.0</column>
+            <column name="name">Middle Street</column>
+            <column name="address">34 Middle St, Portsmouth, Southsea, PO5 4BP</column>
+            <column name="lat">50.79447000</column>
+            <column name="lng">-1.091612000</column>
+            <column name="type">NULL</column>
+            <column name="description">1st floor kitchen and 2nd floor kitchen.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">12.0</column>
+            <column name="name">Nuffield Building</column>
+            <column name="address">Language Specialists International, 1-2 St Michael's Rd, Portsmouth PO1 2EE</column>
+            <column name="lat">50.79532600</column>
+            <column name="lng">-1.096397000</column>
+            <column name="type">NULL</column>
+            <column name="description">1 in Chaplaincy (ground floor) and 1 in 2.22 (2nd floor).</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">13.0</column>
+            <column name="name">Richmond Building</column>
+            <column name="address">Portland St, Portsmouth PO1 3DE</column>
+            <column name="lat">50.79803500</column>
+            <column name="lng">-1.099597000</column>
+            <column name="type">NULL</column>
+            <column name="description">By the café.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">14.0</column>
+            <column name="name">Spinnaker Sports Centre</column>
+            <column name="address">Cambridge Rd, Portsmouth PO1 2ER</column>
+            <column name="lat">50.79497800</column>
+            <column name="lng">-1.096751000</column>
+            <column name="type">NULL</column>
+            <column name="description">In 0.02, 1.05 and 2.04.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">15.0</column>
+            <column name="name">St Michael's Building</column>
+            <column name="address">Portsmouth PO1 2DT</column>
+            <column name="lat">50.79635000</column>
+            <column name="lng">-1.094984000</column>
+            <column name="type">NULL</column>
+            <column name="description">New wing: 2.01, 1.05 and 1.18 &amp; Old wing: 5.38, 3.34, and 1.28.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">16.0</column>
+            <column name="name">St Paul's Sports Centre</column>
+            <column name="address">St Pauls Rd, Portsmouth, Southsea PO5 4AQ</column>
+            <column name="lat">50.79482200</column>
+            <column name="lng">-1.094403000</column>
+            <column name="type">NULL</column>
+            <column name="description">1st floor fountains - through the first doors on the left by the stairs, next to the changing facilities.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">17.0</column>
+            <column name="name">Rosalind Franklin West</column>
+            <column name="address">University House, Winston Churchill Ave, Portsmouth PO1 2UP</column>
+            <column name="lat">50.79519700</column>
+            <column name="lng">-1.093594000</column>
+            <column name="type">NULL</column>
+            <column name="description">In 0.331.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">18.0</column>
+            <column name="name">University Learning Centre</column>
+            <column name="address">Portsea Island, Portsmouth PO1 2DH</column>
+            <column name="lat">50.79574900</column>
+            <column name="lng">-1.092390000</column>
+            <column name="type">NULL</column>
+            <column name="description">1 on ground floor and 1 on 5th floor.</column>
+        </table>
+        <table name="water_stations_data">
+            <column name="id">19.0</column>
+            <column name="name">William Beatty</column>
+            <column name="address">22 Hampshire Terrace, Portsmouth PO1 2QB</column>
+            <column name="lat">50.79349000</column>
+            <column name="lng">-1.096157000</column>
+            <column name="type">NULL</column>
+            <column name="description">Ground floor waiting area.</column>
+        </table>
+    </database>
+</pma_xml_export>
